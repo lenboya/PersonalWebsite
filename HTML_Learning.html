@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Learning</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Learning HTML</h1>
+
+    <h2>Introduction</h2>
+    <p>This page is dedicated to explaining HTML and its Syntax.</p>
+    <p>HyperText Markup Language or HTML for short, defines the structure and content of a webpage.
+    HTML is used to create paragraphs, Headings, Lists, Tables, Buttons, Images, Links and much more.</p>
+
+    <h3>General Syntax</h3>
+    <p>All content defined on a page is wrapped inside a HTML Tag. HTML Tags are the essential building blocks.</p>
+    <p>&lt;&gt; &lt;/&gt;</p>
+    <p>Opening Tags &lt;&gt; consist of keyword that will tell the page how to structure it</p>
+    <p>Closing Tags &lt;/&gt; will terminate the tag you opened with.</p>
+    <p>Some common tags are </p>
+    <ul>
+      <li>&lt; p &gt;</li>
+      <li>&lt; h1 - h6 &gt;</li>
+      <li>&lt; img &gt;</li>
+      <li>&lt; link &gt;</li>
+    </ul>
+    <p> A full list of Tags can be found here: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#image_and_multimedia">HTML Tags</a> </p> 
+    <code>&lt;p&gt; Some content here &lt;/p&gt;</code>
+    <p>All though most elements will have a closing tag, some do not and close within a self closing tag</p>
+    <code>&lt;img /&gt;</code>
+
+    <h2>HTML Structure</h2>
+    <p>All HTML documents generally will have the same layout to start, called a boilerplate.</p>
+    <code>&lt;!DOCTYPE html &gt; <br>
+    &lt;html lang="en"&gt; <br>
+    &lt;head&gt; <br>
+    &lt;/head&gt; <br>
+    &lt;body&gt; <br>
+    &lt;/body&gt; <br>
+    &lt;/html&gt; <br>
+    </code>
+
+    <p>&lt;html&gt; element is what is called the root element. Every other element is a descendant of the root.</p>
+    <p>&lt;head&gt; element is where meta-data of the website is located. Containing things like page title, meta charset </p>
+    <p>&lt;body&gt; element contains all content that is displayed on the HTML page. </p>
+    <p>A website to test your boilerplate for any syntax errors is <a href="https://validator.w3.org/#validate_by_input">HTML validator</a></p>
+
+    <h2>HTML Text</h2>
+    <p>At the core of HTML, it is just working with text. Content on the web is mostly text based. 
+    HTML has elements for creating paragraphs, headings, bolding words, italicizing, listing text and much more. </p>
+
+    <ul>
+     <li>&lt;p&gt; - used to create paragraphs.</li>
+     <li>&lt;strong&gt; - makes text bold, and semantically marks the text as important for accessibility features. </li>
+     <li>&lt;em&gt; - italics textm also semantically marks the text for accessibility features.</li>
+     <li>&lt;ul&gt; - Creates an unordered list. Like this current one.</li> 
+     <li>&lt;ol&gt - Create an Ordered list. Elemets of the ordered list are numbered.</li>
+    </ul> 
+
+  </body>
+</html>
