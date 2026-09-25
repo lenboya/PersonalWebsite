@@ -4,14 +4,57 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Learning CSS</title>
-   <link href="./style.css" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
     <h1>Learning CSS</h1>
 
     <h2>Introduction</h2>
-     <p>CSS stands for Cascading Style Sheet</p>
+     <p>CSS stands for Cascading Style Sheet. CSS is essentially the artist of the page. 
+     It is used to make the HTML structure look good and have a style. </p>
+
+     <p>There are three ways you can add CSS to HTML</p>
+     <ul>
+       <li>External CSS</li>
+       <li>Internal CSS</li>
+       <li>Inline CSS</li>
+
+    </ul>
+    <p>This page goes over external CSS. This is generally the most often used method.
+     External CSS involves creating a separate file called a stylesheet "styles.css".
+     We link the style sheet to the html page using the link element within the head element.</p>
+
+    <code>&lt; link rel="stylesheet href=style.css"&gt;</code>
+    <p>The href attribute is where the CSS file is located, the rel attribute specifies the relationship
+     between the linked file and the HTML file.</p>
+
+
+    <h2>CSS Syntax</h2>
+    <p>A CSS line of code contains a selector, some property and a value.
+     Selectors are the HTML element we are lookign to apply a css rule too.
+     There is quite an indepth selection of selectors so lets go over them. </p>
+
+    <h3>Universal Selector</h3>
+    <p>A universal selector will select all elements of an HTML page. It is a simple asterisk.
+    The code below will change every element to the color red.</p>
+
+    <code>* {color:red;}</code>
+   
+    <h3>Element Selector</h3>
+    <p>An Element selector will select the elements of the given element specified</p>
+    <code>p{color:blue;}</code>
+    <p>All the elements of the p type, will now be colored blue</p>
+
+    <h3>Class Selector</h3>
+    <p>Elements can be given a unique class that differentiates the element from others. CSS can then
+     be applied to that specific element using its class name. The syntax is a period followed by the class name.</p>
+
+    <code>&lt;h2 class="Header"&gt; Header 2 &lt;/h2&gt;</code> <br>
+    <code>.header {color:black;}</code>
+    
+    <h2> CSS Properties</h2>
+
   </body>
 
 </html>
