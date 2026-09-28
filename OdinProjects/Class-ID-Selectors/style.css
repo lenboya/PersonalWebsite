@@ -1,0 +1,21 @@
+.OddNum{
+    background-color: #FCA4A4;
+    font-family:Verdana,'DejaVu Sans',sans-serif
+
+}
+
+.cooler{
+    font-size:24px;
+}
+
+#EvenNum1 {
+    color:blue;
+    font-size:36px;
+}
+
+
+#EvenNum2{
+    background-color: #D1FCA4;
+    font-size: 24px;
+    font-weight: bold;
+}
