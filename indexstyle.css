@@ -1,7 +1,64 @@
-.Links a:visited{
-    color:black;
+body{
+    background-color:#526D82 ;
     
 }
-.links a:hover{
+
+
+.NavBar{
+    display:flex;
+   
+    border-bottom:1px solid red;
+    justify-content: space-between;
+
+}
+
+.NavBar h1{
+    margin-top: 0px;
+}
+
+
+.NavBar ul {
+    padding-left:0px;
+    margin-bottom:0px;
+    display:flex;
+    list-style-type: none;  /* Removes bullet point from list */
+    align-items:flex-end;
+    gap:6px;  /* Distributes list elements 6 pixels apart */
+}
+
+.NavBar a:visited{
+    color:black;
+
+}
+
+.Links{
+    display:flex;
+    flex-direction: column;
+    height:400px;
+    justify-content: center;
+    align-items:flex-start
+        
+}
+
+.Links a{
+    margin:10px;
+    background:gray;
+    border:5px solid red;
+    
+    color:white;
+    
+    
+}
+
+
+
+
+
+.Links a:visited{
+    color:white;
+
+    
+}
+.Links a:hover{
     color:green;
 }
