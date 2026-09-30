@@ -54,20 +54,23 @@
     <h2>CSS Syntax</h2>
     <p>A CSS line of code contains a selector, some property and a value.
      Selectors are the HTML element we are lookign to apply a css rule too.
-     There is quite an indepth selection of selectors so lets go over them. </p>
+     There is quite an indepth selection of selectors so lets go over them. 
+    </p>
 
-    <h3>Universal Selector</h3>
+    <h3>Selectors</h3>
+    
+    <h4>Universal Selector</h4>
     <p>A universal selector will select all elements of an HTML page. It is a simple asterisk.
     The code below will change every element to the color red.</p>
 
     <code>* {color:red;}</code>
    
-    <h3>Element Selector</h3>
+    <h4>Element Selector</h4>
     <p>An Element selector will select the elements of the given element specified</p>
     <code>p{color:blue;}</code>
     <p>All the elements of the p type, will now be colored blue</p>
 
-    <h3>Class Selector</h3>
+    <h4>Class Selector</h4>
     <p>Elements can be given a unique class that differentiates the element from others. CSS can then
      be applied to that specific element using its class name. The syntax is a period followed by the class name.</p>
 
@@ -82,11 +85,60 @@
     
     <p>The font of an element can be changed using the property <code>font-family</code> and giving a value of a font family name.</p>
     <p>If the browser can not find the font, it will use the next available one until a supported one is found.</p>
+    
+    <ul>
+      <li>color</li>
+      <li>border-color</li>
+      <li>font-size</li>
+      <li>font-family</li>
+    </ul>
 
+
+
+    
 
     <h2>Box Model</h2>
-    <p>Everything with a webpage, is essentially a rectangle that can be nested within each other, and positioned around each other.</p>
+    <p>Everything within a webpage, is essentially a rectangle that can be nested within each other, and positioned around each other.</p>
     <p>Every box has a padding, border, and margin. Allowing you to manipulate a boxes size. </p>
+
+
+    <p>In the box model, margin collapses between two elements when they are next to each other</p>
+    <p>The height and width of a box will take into account the border and padding into its overall value</p>
+
+
+    <h2>Flexbox</h2>
+    <p>Flexbox is another way to design the website using the Box model. It is a way of arranges boxes in rows and columns,
+      that will shrink or grow dependent on the CSS rules define.
+    </p>
+
+    <p>A flex container holds flex items. A flex container is declared in CSS using the property <code>diplay:flex;</code>
+    Note: an element can be both a flex container and flex item. This is key, as the design of a webpage with flex
+    will contain multiple nested flex containers and items.</p>
+
+
+    <h3>Flex Properties</h3>
+
+
+    <ul>
+      <li>display</li>
+      <li>flex - shorthand property for flex-grow, flex-shrink, flex-basis</li>
+      <li>flex-grow: Applies a growth factor</li>
+      <li>flex-shrink: similar to flex grow but applies a shrink factor, size of items must be larger than parent</li>
+      <li>flex-basis: sets initial size of a flex item</li>
+      <li>flex-direction: sets direction of flex container, default is row(horizontal)</li>
+      <li>justify-content: aligns items along its main axis</li>
+      <li>align-items: aligns content along the cross axis</li>
+      <li>gap: adds specified space between flex items</li>
+
+
+    </ul>
+
+
+
+
+
+    <h2>Key Notes</h2>
+    <p>Empty divs by default have a height of 0</p>
   </body>
 
 </html>
